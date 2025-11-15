@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Fine-Tuned SEO & Branding -->
+    <title>Vian Scientific - AI-Powered Code Analysis</title>
+    <meta name="description" content="Analyze your software projects with Vian Scientific's AI assistant. Upload your code to get insights on structure, dependencies, and potential improvements.">
+    <meta name="keywords" content="Vian Scientific, AI code analysis, software development, project analysis, code review, developer tools">
+    <meta name="author" content="Vian Scientific">
+    <link rel="canonical" href="https://www.vianscientific.com" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#f97316">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f97316">
+    <meta name="msapplication-TileColor" content="#da532c">
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vianscientific.com">
+    <meta property="og:title" content="Vian Scientific - AI-Powered Code Analysis">
+    <meta property="og:description" content="Analyze your software projects with Vian Scientific's AI assistant. Upload your code to get insights on structure, dependencies, and potential improvements.">
+    <meta property="og:image" content="https://www.vianscientific.com/vian-logo.png">
+    <meta property="og:site_name" content="Vian Scientific">
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="en_IN" />
+
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.vianscientific.com">
+    <meta name="twitter:title" content="Vian Scientific - AI-Powered Code Analysis">
+    <meta name="twitter:description" content="Analyze your software projects with Vian Scientific's AI assistant. Upload your code to get insights on structure, dependencies, and potential improvements.">
+    <meta name="twitter:image" content="https://www.vianscientific.com/vian-logo.png">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+    <style>
+      /* Custom scrollbar for webkit browsers */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #2d3748; /* gray-800 */
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #4a5568; /* gray-600 */
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #718096; /* gray-500 */
+      }
+      /* Basic styles for rendered markdown */
+      .prose h1, .prose h2, .prose h3 { margin-top: 1.25em; margin-bottom: 0.5em; font-weight: 600; }
+      .prose h1 { font-size: 1.5rem; }
+      .prose h2 { font-size: 1.25rem; }
+      .prose h3 { font-size: 1.1rem; }
+      .prose p { margin-bottom: 1em; }
+      .prose strong { font-weight: 700; }
+      .prose ul { list-style-type: disc; margin-left: 1.5em; margin-bottom: 1em; }
+      .prose ol { list-style-type: decimal; margin-left: 1.5em; margin-bottom: 1em; }
+      .prose li { margin-top: 0.25em; }
+      .prose pre { background-color: #1a202c; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-bottom: 1em; }
+      .prose code { font-family: monospace; background-color: #2d3748; padding: 0.2em 0.4em; border-radius: 0.25rem; }
+      .prose pre code { background-color: transparent; padding: 0; }
+      .prose a { color: #60a5fa; text-decoration: underline; }
+      .prose blockquote { border-left: 4px solid #4a5568; padding-left: 1em; margin-left: 0; color: #a0aec0; }
+
+      /* Blinking cursor for streaming response */
+      .blinking-cursor {
+        display: inline-block;
+        width: 8px;
+        height: 1em;
+        background-color: #f97316;
+        animation: blink 1s step-end infinite;
+        vertical-align: text-bottom;
+        margin-left: 4px;
+      }
+      @keyframes blink {
+        50% {
+          opacity: 0;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.29.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-gray-100">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
