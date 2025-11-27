@@ -31,8 +31,8 @@ const App: React.FC = () => {
     setIsLoading(true);
   
     try {
-      const stream = await chatSession.sendMessageStream({ message: prompt });
-  
+      const stream = await chatSession.sendMessageStream(prompt);
+
       for await (const chunk of stream) {
         const chunkText = chunk.text;
         setMessages(prev => {
